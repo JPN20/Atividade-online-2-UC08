@@ -1,0 +1,35 @@
+let dataInsc = 2021.08.19;
+let dataEvento = 2021.08.21; 
+let dataNasc = 2002.07.29;
+let idade = dataEvento - dataNasc;
+let listaParticipantes = ['Flávio', 'Maria', 'Cecília'];
+
+console.log("Por favor, digite a data que deseja participar do evento:", dataInsc)
+
+if(dataInsc<=dataEvento){
+    console.log('Inscrição permitida!')
+}
+else {
+     console.log("Sua inscrição não foi autorizada!")
+     }
+
+console.log('Digite sua data de nascimento: ', dataNasc)
+
+    if (dataNasc<=dataEvento){
+        console.log('Digite sua idade: ', idade)
+    }
+else {
+     console.log("Sua inscrição não foi autorizada!")
+     }    
+
+if (idade>=18){
+    if (listaParticipantes.length<100 ) {
+         console.log("O cadastro foi concluído! Seja bem-vindo!")
+     } 
+    else {
+         console.log("Sinto muito, mas a capacidade máxima de participantes foi atingida!")
+     }
+} 
+else{
+         console.log("Sinto muito, mas você é muito novo! Sua inscrição não foi autorizada")
+      }
